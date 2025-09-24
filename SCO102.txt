@@ -1,0 +1,389 @@
+INTRODUCTION TO PROGRAMMING
+COURSE OUTLINE 
+WEEK 1
+Introduction to programming methodology
+   the imperative styles
+
+WEEK 2 AND 3
+Program development using a higher level programming language such as c
+ Introduction to C language
+ features of c language
+ editing, compiling and executing using a simple c programming
+
+ WEEK 4
+ Variables and Constants
+  Declaring variables and Constants in c language
+  Symbolic and literal Constants
+  initialisation and assignments
+  syntax of statements and expressions in c language
+  operator precedence, number of operands and associatively rules
+
+WEEK 5
+Control Structures
+ selection control structures - if, if else and switch
+ iteration control structures - while, do, while and for
+
+WEEK 6
+CAT 1
+
+WEEK 7, 8 , 9
+Functions
+ function prototype and function definition
+ passing arguments to functions and calling functions
+
+WEEK 10, 11
+Arrays
+ One dimensional Arrays
+ Two dimensional Arrays
+Working with text files
+
+
+
+ INTRODUCTION
+ - Program - a sequence of logical instructions that should be followed by a computer to solve a given problem
+    - Consits of data definition and procedure calls(how the data is processed)
+- Programming - activities performed by a programmer
+   -Process of creatinng logic models which is converted into pprogram language instructions later executed on a computer
+   -Aim of writing programs is to solve a problem or perform a task
+   -The answer will comprise of the instructions
+   The following tasks can be performed;
+   a. repetitious, and therefore would exceed human patience or capacity for long term attention to details
+   b. controls machinery in conditions unsuitable for humans because of physical limitations and hazardous conditions
+   c. requires a high degree of accuracy
+   d. requires high speed
+- Programmer(coder, developer, software engineer) - person who writes computer software
+  ROLES OF A Programmer
+  - Writes, tests, debugs and maintains the detailed instructions(computer programs) that computers must follow to perform their functions
+  - Conceive, design and test logical structures for solving problems by a computer
+  - Revise existing packaged software or customize generic applications purchased from software vendors
+  - Mkae changes in the instructions that determine;
+   a. how the network, workstattions, and CPU of the system handle the various jobs they have been given
+   b. how they communicate with peripheral equipment such as printers and disk drivers
+Programmers are grouped into two broad types;
+    a. Application programmers(apps)
+    b. system programmers
+
+PURPOSE OF PROGRAMMING
+- Use computers to solve computers caused by computers
+- Automate a processed
+- Enable creativity by programmer
+- Solving a difficult data analysis program
+- Having fun 
+
+-Algorithm - clear and unambigous specification steps needed to solve a problem 
+  PROPERTIES OF AN Algorithm
+  a. Input specified
+  b. Output specified
+  c. Definiteness
+  d. Effectiveness
+  e. Finiteness
+
+  STAGES INVOLVED IN CREATING AN Algorithm
+  a. Data Input
+  b. Data Processing
+  c. Results Output
+
+  ALGORITHM DEVELOPMENT PROCESS 
+  1. Obtain a description of the problem
+  2. Analyze the problem
+  3. Develop a high level Algorithm
+  4. Refine the algorithm by adding more detail
+  5. Review the algorithm
+
+  ADVANTAGES OF ALGORITHMS
+  a. It is a step wise representation of a solution to a given problem, which makes it easy to understand
+  b. An algorithm uses a definite procedure
+  c. It is not dependent on any programming language so it is easy to understand for anyone even without programming knowledge
+
+  EXPRESSING ALGORITHMS
+  -An algorithm can be  expressed in three ways
+   a. Expressing it in human language(Language that humans undertand e.g English)
+   b. Through flowchart
+   c. Through pseudocode
+
+   EXAMPLE
+   Task: Determine the number of times a name occurs in a given list of names
+   
+   1. Input to the program
+    -list of names
+    -name to look for
+   2. Process the Program
+    -compare the keyname against the list of names in the list
+   3. Output of the program
+   -the number of times the name occurs in the list
+
+     EXPRESSION 1(HUMAN LANGUAGE)
+     1. Get the list of names
+     2. Get the name to look for
+     3. Compare the keynames to each of the names in the list
+     4. If the keyname is the same with a name in the list,   add 1 to the count 
+     5. If not the same, move to the next name in the list 
+     6. If all the names have been compared, output the result
+
+     EXPRESSION 3(PSEUDOCODE) - English you can write that is closest the machine
+     Let nameList = List of names
+     Let keyName = the name to be sought
+     Let Count = 0
+     For each name in nameList do
+     if name == keyName
+     Count = Count + 1
+     Display Count
+
+- Debugging - process of adding some fixes to the program in case of errors(bugs) that occurs in the program
+     TYPES OF ERRORS 
+     a. Syntax error
+     b. Runtime error
+     c. Logical error
+     d. Semantic error
+     e. Linker error
+     f. Compile time Error
+
+- Compiler - converts computer language statements into executable machine code
+ - A compiler also converts source code into machine code i.e source code into a .exe file  to be run by a computer
+
+ NB:
+ - Complied programs run faster since the source code to machine code conversion was done in advance and placed in a file that can be executed by the operating system
+
+- Interpreter - converts high level code to real-time machine code and store it in the memory for direct execution
+  - Translates the code in real time as you operate the program, then process it, and therefore the slowest
+   Example: unix shell interpreter
+
+- Syntax - the structure and the rules of a programming language
+ - The way symbols may be combined to create well formed sentences or programs
+ - How an operator is used in an expressions
+
+- Semantics 
+ a. Meaning of a statements
+ b. What it does
+ c. How it does/works
+ d. What side effects it has
+
+11th September, 2025
+ C LANGUAGE
+ - C was created by Dennis Ritchie at the Bell Telephone Laboratories in 1972
+ - Is a powerful and flexible language
+ - C is a popular language preferred by professional programmers
+ - C is a portable language
+ - C is a language f few words, containing only a handgul of terms, called keywords, which serve as the base on which the language functionality is built
+ - C is modular. C code can and should be written into routines called functions. These functions can be reused in other applications or programs.
+
+ THE PROGRAM DEVELOPMENT CYCLE
+ a. Creating the source code 
+ b. Using an editor
+ c. Compiling the source code
+ d. Linking to create an executable file
+
+ STRUCTURE OF A C PROGRAM
+ a. HEADER SECTION - containes names, author, revision not
+ b. INCLUDE SECTION - contains include statements
+ c. CONSTANTS AND TYPES SECTION - containes type and #defines 
+ d. GLOBAL VARIABLE SECTION - any global variables declared here 
+ e. FUNCTIONS SECTION - user defined SECTION
+ f. MAIN() SECTION - main must be there for any c program
+   Int main(){
+
+   }
+
+ADVANTAGES OF STRUCTURING A PROGRAM
+- Well defined program structure makes your programs;
+a. Easy to read
+b. Easy to modify - you only need to edit that section
+c. Consistent in format
+d. Self documenting - via comments
+
+USING CODE BLOCK
+a. Click on start
+b. Select codeblock
+c. Select create project
+d. Select console application
+e. Click on Go 
+f. Select c
+g. Select next
+h. Create a project name 
+i. Click Next 
+j. Click finish
+
+
+- Click on new file
+- Select New 
+- Selct empty project 
+- Select yes
+- Give the name of file in dialog box
+
+
+ RUNNING A CODE BLOCK
+ - Type the program 
+  - Click on build
+  - Select Compile
+  - After compiling, debug if necessary
+  - Output of program will be displayed
+
+EXAMPLE 1
+//Listing 1.1. HELLO.C.
+//Our First C program
+# include <studio.h>
+   void main()
+{
+   printf("Hello, World!\n");
+   return;
+}
+
+THE COMPONENTS OF A C PROGRAM
+- Every c program consists of several components combined in a certain way.
+a. main() Function
+-Only component that is required in ecery C program is the main() function
+-Consists of the name main followed bby a pair of empty parantheses() and a pair of braces{}
+-Under nnormal circumstances, program execution starts at the first statement in main() and terminates at the last statement in main()
+
+b. Braces 
+- You use braces {} to enclose the program lines that make up evry C function - including the main() function 
+- A group of one or more statements enclosed within braces is called a block 
+
+c. The #include Directive
+- instructs the C compiler to add the contents of an include file into your program during compilation
+- contains information needed by your program or the compiler
+- sometimes called header files
+- all have an .H extension (for example, STUDIO.H)
+- You use the #iclude directive to innstruct the compiler to add a specific include file to your program during compilation
+
+d. The Variable definition
+- A variable is a name assigned to a data storage location 
+- Program uuses variables to store various kinds of data during program execution 
+- In C, a variable must be defined before it can be used.
+- A variable definiton informs the compiler off the variable's name and the type oof data it is to hold
+
+TYPES OF Variables
+-Integers
+-Float 
+-Boolean
+-Characters
+-Strings
+
+e. The Function Prototype
+- A FUNCTION PROTOTYPE provides the C compiler with the name anf arguments of the functions contained in the program 
+
+f. Program statements
+- Do the real work of a C program
+- Display infromation on-screen, read keyboard input, perform mathematical operations, call functions, read disk files, and carry out all the other operations that a program needs to perform
+- Always end with a semicolon;
+Examples:
+a. printf()
+b. scanf()
+c. return
+
+g. The Function Definition 
+- A Function is an independent, self-contained section of code that is written to perform a certain task.
+- Every function has a name, and the code in each function is executed by including that function's name in a program statement. This is known as calling the function
+
+h. Program comments
+- Any part of your program that starts with / and ends with / or has // is called a comments
+- The compiler ignores all comments as they have no meaning to te source code
+- A comment can span part of a line, an entire line or multiple lines 
+- Here are three examples:
+a. /a single line comment/
+b. use // for a single line comment only 
+  
+  USES OF COMMENTS 
+- Documentation of variables and their usage
+- Explaining difficult sections of a code 
+- Describing the author, program, date, modification changes, revisions
+- Copying
+
+ VARIABLES IN C 
+ - program has to remember a value
+ - Program remembers things is by using variables 
+ - Several standards types of variables include;
+ a. integer       int        - can  be used for calculations
+ b. Floating point     float   - can be used for calculations
+ c. char - single character values                char    -cannot be used for calculations 
+ d. double -> double precission real(floating point)         double
+
+
+ printf
+ - allows you to send output to standard out
+ - standard out is the screen(although you can redirect standard out into a text file or another command), e.g 
+Example 1
+    #include <stdio.h>
+    int main()
+    {
+       int a, b, c;
+       a = 5;
+       b = 7;
+       c = a + b;
+       printf("%d + %d = %d\n", a,b, c);
+       return 0; 
+    }
+
+Example 2 - depends on the values entered
+    #include <studio.h>
+    int main()
+     {
+       int a, b, c;
+       printf("Enter the first value:");
+       scanf("%d", &a);
+       printf("Enter the second value:");
+       scanf("%d", &b)
+
+       c = a + b;
+       printf("%d + %d = %d\n", a,b,c);
+       return 0;
+     }
+
+ scanf
+ - Allows you to input from standard in, the keyboard.
+ - Simplest application of scanf looks like:
+     scanf("%d", &b);
+- Placeholders are in output and in input
+- The scanf function uses the same placeholders as printf:
+a. int uses %d
+b. float uses %f
+c. char uses %c 
+d. character strings uses %s 
+e. double uses %e
+
+EXAMPLE 1
+#include <studio.h>
+Main()
+{
+   int sum;
+   float money;
+   char letter;
+   double pi;
+   sum = 10;     /*assigns integer value */
+   money = 2.21;  /*assigns float value  */
+   letter = 'A';  /*assigns character value */
+   Pi = 2.01 E6;   /*assigns a double value */
+   printf("value of sum = %d \n", sum);
+   printf("value of money = %f \n", money)
+   printf("value of letter = %c \n", letter)
+   printf("value of pi = %e \n", pi)
+}
+
+NB:
+- User defined variables must be declared before they can be used in a program
+- Varaibles must be declared using lowercase Characters
+- Declaration of variables is done after the opening brace of main()
+
+EXERCISE
+Write a C program that can add, subtract and multiply and divide entered numbers
+
+#include <studio.h>
+int main()
+{
+   float a, b, c, d, e, f;
+       printf("Enter the first value:");
+       scanf("%f", &a);
+       printf("Enter the second value:");
+       scanf("%f", &b);
+
+       c = a+b;
+       d = a-b;
+       e = a*b;
+       f = a/b;
+
+       printf("%f + %f = %f\n", a,b,c);
+       printf("%f + %f = %f\n", a,b,d);
+       printf("%f + %f = %f\n", a,b,e);
+       printf("%f + %f = %f\n", a,b,f);
+       return 0;
+}
