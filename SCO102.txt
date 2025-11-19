@@ -341,6 +341,9 @@ c. char uses %c
 d. character strings uses %s 
 e. double uses %e
 
+1257.2025@students.ku.ac.ke 
+keEa4zxs
+
 EXAMPLE 1
 #include <studio.h>
 Main()
@@ -387,3 +390,163 @@ int main()
        printf("%f + %f = %f\n", a,b,f);
        return 0;
 }
+
+
+FORMATTERS
+Cursor Control Formatters 
+\n - opening a new line
+\t - tab key(horizontally)
+\r - return key
+\f - move cursor to a new page 
+\v - vertically
+
+Variable Formatters 
+%d - integer
+%c - character
+%s - string
+%f - float
+%e - double
+
+Example 
+#include <stdio.h>
+Int Main()
+{
+   int sum, value;
+   sum=10;
+   value=15;
+   print("%d\t %d\n", sum, value);
+}
+
+Exercise 
+1. Write a C program that records 3 integers and prints the sum and average of the numbers
+2. Write a C program that reads 2 numbers i,j and finds i+j, i-j and i/j
+
+OPERATORS
+Multiply          *       sum = sum*2
+Divide            /       sum = sum/2
+Adddition         +       sum = sum+2
+Subtraction       -       sum = sum-2
+Increment         ++      ++sum or sum++
+Decrememnt        --      --sum or sum--
+Modulus            %      sum = sum%3
+
+Example
+#include <stdio.h>
+Void Main()
+{
+   int sum=50;
+   float modulus;
+   modulus = sum%10;
+   Printf("The % of %d by 10 is %f\n", sum, modulus);
+}
+
+Increment 
+- It adds one to the valueof the variable
+e.g int count = 4;
+       count ++;
+
+Decrement 
+- It subtracts one from the value of the variable 
+e.g int count = 6;
+     count --
+
+Modulus 
+- Assigns the remainder left over after a division to the value of the variable
+e.g int count = 20;
+      count = 20 % 3; 
+
+Pre/post increment/decrement operators 
+- Pre means do the operation first followed by any assignment 
+- Increase before you assign 
+e.g 
+++count;
+
+- Post means do the operation after any assignment operation 
+e.g 
+count++
+
+Example 
+#include <stdio.h>
+Int Main()
+{
+    int count=0, loop;
+    loop = ++count;
+    printf("loop = %d, count = %d\n", loop, count);
+    loop = count++;
+    printf("loop = %d, count = %d\n", loop, count);
+}
+
+
+Example(Modifiers)
+#include <stdio.h>
+Void Main()
+{
+   int sum;
+   char letter;
+   float money;
+   printf("Please enter an integer value");
+   scanf("%d",&sum);
+   printf("Please enter a character");
+   scanf("%c",&letter);
+   printf("Please enter a float variable");
+   scanf("%f",&money);
+   printf("\n the variables you entered were:");
+   printf("value of sum = %d\n", sum);
+   printf("value of letter = %c\n", letter");
+   printf("value of money = %f\n", money");
+}
+
+Conditional/relational operators
+- Compare two or more variables
+Comparison of two or more variables 
+< - less than; 4 < 5 is TRUE
+<= - less than or equal; 3 <= 4 is TRUE
+== - equal to; 5 == 5 is TRUE
+!= - not equal to; 4 != 5 is TRUE
+>= - greater than or equal to; 4 >= 3 is TRUE
+> - greater than; 5 > 4 is TRUE
+
+Example 
+#include <stdio.h>
+int a;
+int main()
+{
+   a = (5==5);
+   printf("\n a =(5==5)\na = %d",a);
+   a = (5 != 5);
+   printf("\na = (5 != 5)\na = %d",a);
+   a = (12 == 12) + (5 != 1);
+   printf("na\ = (12 == 12) + (5 != 1)\na = %d\n",a);
+   return 0;
+}
+
+Boolean Operators 
+1. && - AND     e.g exp1 && exp2
+- TRUE(1) only if both exp1 and exp2 are true otherwise FALSE(0)
+Examples
+(5==5)&&(6!=2) - TRUE(1) because both operands are true 
+(2==1)&&(5==5) - FALSE(0) because one operand is false 
+
+2. || - OR      e.g exp1 || exp2
+-TRUE(1) if either exp1 or exp2 is true; FALSE(0) if only both are false
+Example
+(5>1)||(6<1) - TRUE(1) because one operand is true
+
+3. ! - NOT      e.g !exp1
+- FALSE(0) if exp1 is true; TRUE(1) if exp1 is false
+Example
+!(5==4) - TRUE(1) because one operand is false
+
+Example 
+#include <stdio.h>
+int a=5, b=6, c=5, d=1;
+int x;
+main()
+{
+   x = a<b || a<c && c<d;
+   printf("\nWithout parantheses the expression evaluates as %d", x);
+   x = (a<b || a<c) && c<d;
+   printf("\nWithout parantheses the expression evaluates as %d\n", x);
+   return 0;
+}
+
