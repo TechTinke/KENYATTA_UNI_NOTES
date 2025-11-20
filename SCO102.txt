@@ -341,8 +341,7 @@ c. char uses %c
 d. character strings uses %s 
 e. double uses %e
 
-1257.2025@students.ku.ac.ke 
-keEa4zxs
+
 
 EXAMPLE 1
 #include <studio.h>
