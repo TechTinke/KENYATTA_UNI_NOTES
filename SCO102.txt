@@ -549,3 +549,204 @@ main()
    return 0;
 }
 
+
+15th January, 2026
+Example(Product of Matrices)
+
+#include <stdio.h>
+int main()
+{
+   int m, n, p, q, c, d, k, sum=0;
+   int first [10][10], second [10][10], multiply[10][10];
+   printf("Enter the number of rows and columns of the first matrix\n");
+   scanf("%d%d", &m,&n);
+   printf("Enter the elements of the first matrix\n");
+   for (c=0;c<m;c++)
+   for (d=0;d<n;d++)
+   scanf("%d", &first[c][d]);
+   printf("Enter the number of rows and columns of the second matrix\n");
+   scanf("%d%d", &p,&q);
+   if (n != p)
+   printf("Matrices with the entered orders can't be multiplied with each other.\n");
+   else
+   {
+      printf("Enter the elements of the second matrix\n");
+      for (c=0; c<p; c++)
+      for (d=0; d<q; d++)
+      scanf("%d", &second[c][d]);
+      for (c=0; c<m; c++)
+      {
+         for (d=0; d<q; d++)
+         {
+            for (k=0; k<p; k++)
+            {
+               sum = sum + first[c][k]*second[k][d];
+            }
+            multiply[c][d] = sum; sum = 0
+         }
+      }
+      printf("Product of the entred matrices:-\n");
+      for (c=0; c<m; c++)
+      {
+         for (d=0; d<q;  d++)
+         printf("&d\t", multipy[c][d]);
+         printf("\n");
+      }
+   }
+   return 0;
+}
+
+Assignment
+1. Write a C program that can find the transpose of a matrix
+2. Write a C program that can subtract 2 matrices
+3. Write a C program that can display the largest element of an Array
+4. Write a C program that uses an array to find average of 20 integer values
+
+FUNCTIONS
+- Is a segment that groups a number of program statements to perform a specific task.
+- A C program has at least one function main()
+- Without the main() function, there is technically no C program
+- Other types of functions include printf() and scanf()
+
+Types of Functions
+a. Library function
+- They include;
+1. main()
+2. printf()
+3. scanf()
+
+b. User defined functions
+- Programmer defines their own function according to their requirement
+
+Syntax of a C function
+data_type function_name (parameters) //declaration of the function
+data_type function_name (parameters) // definition of the function
+{
+   body of the function;
+}
+
+
+Working of a function(example)
+#include <stdio.h>
+void function_name(){
+
+}
+int main(){
+
+   function_name(); //calling the function
+}
+
+
+Example of a C function
+int add(int a, int b)
+int add(int a, int b)
+{
+   int sum;
+   sum = a+b;
+   return sum;
+}
+
+Example a C program that can calculate the square of numbers using a function
+#include <stdio.h>
+//function prototype also called function declaration
+float square (float x); //function declaration
+//main function starts from here
+int main()
+{
+   float m, n;
+   printf("\nEnter some number finding the square\n");
+   scanf("%f, &m);
+   n = square(m);// function call
+   printf("\nSquare of the given number %f is %f", m, n);
+}
+float square (float x)
+(incomplete)
+
+ADVANTAGES OF USER DEFINED FUNCTIONS
+1. User defined functions helps to decompose a large program into small segments which makes it easy for the programmer to understand code, maintain and debug
+2. If repeated code occurs in a prgram. Function can be used to include those cdes and execute when needed by calling the function.
+3. Programmer working on a large project can divide the workload by making different functions
+
+Assignment
+1. Using a function, write a C program that can multiply two integers. The function should be called "multi" and should perform the multiplication of the integers. The result called product should be displayed in the main() function of the program
+2. Write a program in C to swap twi numbers using a function
+3. Write a C program to check if a given number is even/odd using a function
+4. Write a C program to check whether a number is a prime number or not using a function
+
+CALLING A FUNCTION
+Syntax of a function call 
+function_name(argument(1),...argument(n));
+- In the above example, function call is made using the statement add(num1, num2); from main()
+- This makes the control of the program jump from that statement to fucntion definition and executes code inside that function
+- There are two ways that a C function can be called from a program.
+- They are:
+1. call by value
+2. call by reference
+
+1. Call by value
+- Arguments are passed by value while calling a function in C program
+Example program (calling by value)
+#include <stdio.h>//function prototype(function declaration)
+void swap(int a, int b)
+int main()
+{
+   int m=22, n=44;
+   printf("values before swap m=%d \n and n =%d",m,n);
+   swap(m, n);
+}
+void swap(int a, int b)
+{
+   int tmp;
+   tmp = a;
+   a = b;
+   b = tmp;
+   printf("\n values after swap m = %d\n and n = %d\m", m, n)
+}
+
+2. Call by reference
+- Arguments are passed by addresses while calling a function in a C program
+Example
+#include <stdio.h>//function prototype
+void swap(int *a, int *b)
+int main()
+{
+   int m=22, n=44;
+printf("values before swap m=%d\n and n =%d", m,n);
+swap(&m, &n);
+}
+void swap(int *a, innt*b)
+{
+   int tmp;
+   tmp = *a 
+   *a = *b;
+}
+//incomplete
+
+PASSING ARGUMENTS TO FUNCTIONS
+- In the above example, two varibales, num 1 and num 2 are passed to a function during function call and these arguments are accepted by arguments a and b in function definition
+#include <stdio.h>
+int add(int a, int b);
+int main(){
+   sum = add(num1, num2);
+}
+int add(int a, int b){
+
+}
+Here, 
+a = num 1
+b = num 2
+
+Example
+#include <stdio.h>
+int mult(int a, int b)
+int main()
+{
+   int x; int y;
+   printf("Please input two numbers to be multiplied:");
+   scanf("%d, &x);
+   scan
+}  
+
+Assignment
+1. Write a C program that allows the user to input numbers, pass to a function and then return highest number to main function. Displaythe highest number in the function
+2. Using an example, distinguish between library functions and user defined functions in C
