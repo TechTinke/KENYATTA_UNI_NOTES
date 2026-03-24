@@ -685,9 +685,9 @@ function_name(argument(1),...argument(n));
 
 1. Call by value
 - Arguments are passed by value while calling a function in C program
-Example program (calling by value)
-#include <stdio.h>//function prototype(function declaration)
-void swap(int a, int b)
+Example program ( Call by Value)
+#include <stdio.h>
+void swap(int a, int b)//function prototype(function declaration)
 int main()
 {
    int m=22, n=44;
@@ -732,7 +732,7 @@ int main(){
 int add(int a, int b){
 
 }
-Here, 
+Here, 3x
 a = num 1
 b = num 2
 
